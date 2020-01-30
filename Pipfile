@@ -14,6 +14,8 @@ python-decouple = "*"
 python-dotenv = "*"
 scikit-learn = "*"
 gunicorn = "*"
+psycopg2 = {index = "nary",version = "*"}
+psycopg2-binary = "*"
 
 [requires]
 python_version = "3.7"
