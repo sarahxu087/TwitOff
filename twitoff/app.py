@@ -11,7 +11,9 @@ def create_app():
 
     @app.route('/')
     def root():
+
         users = User.query.all()
+        DB.create_all()
         return render_template('base.html',title='Home', users=users)
     
     @app.route('/user',methods=['POST'])
